@@ -1,0 +1,16 @@
+---
+- name: Add universe repository into sources list
+  apt_repository:
+    repo: deb http://us.archive.ubuntu.com/ubuntu xenial main universe
+    state: present
+
+- name: Install figlet
+  apt:
+    state: present
+    name: figlet
+    update_cache: yes
+
+- name: Dump figlet output into motd
+  become: true
+  shell:  figlet '{{ node }}' > /etc/motd
+
