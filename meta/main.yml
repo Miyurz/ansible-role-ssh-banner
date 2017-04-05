@@ -26,6 +26,9 @@ galaxy_info:
       - name: MacOSX
         versions:
            - all
+      - name: Fedora
+        versions:
+           - 24
       - name: Darwin
         versions:
            - all
