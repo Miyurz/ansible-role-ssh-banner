@@ -25,7 +25,8 @@ galaxy_info:
            - xenial
 
    galaxy_tags:
-      - ssh-banner
+      - banner
       - motd
+      - ssh
 
 dependencies: []
