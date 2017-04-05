@@ -1,0 +1,14 @@
+---
+# Update homebrew first and install package figlet in default PATH
+- name: Running the Mac role now
+  command: echo Running the role for Mac
+
+- name: Update homebrew first and install figlet
+  homebrew:
+    name: figlet
+    state: present
+    update_homebrew: yes
+
+- name: Dump figlet output into motd
+  become: true
+  shell:  figlet '{{ host }}' > /etc/motd

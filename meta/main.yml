@@ -23,11 +23,15 @@ galaxy_info:
       - name: Ubuntu
         versions:
            - xenial
+      - name: Darwin
+           - all
 
    galaxy_tags:
       - banner
       - motd
       - figlet
       - ssh
+      - mac
+      - OSX
 
 dependencies: []
