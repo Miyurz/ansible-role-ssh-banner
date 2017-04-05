@@ -1,0 +1,18 @@
+---
+- name: Redhat family
+  command: echo Redhat family  
+
+- name: Install python2-dnf pre-req
+  become: true
+  command: dnf install -y python2-dnf
+
+- name: Install figlet
+  become: true
+  dnf:
+    state: present
+    name: figlet
+
+- name: Dump figlet output into motd
+  become: true
+  shell:  figlet '{{ host }}' > /etc/motd
+

@@ -1,4 +1,7 @@
 ---
+- name: Debian family
+  command: echo Debian family
+
 - name: Add universe repository into sources list
   apt_repository:
     repo: deb http://us.archive.ubuntu.com/ubuntu xenial main universe
@@ -12,5 +15,5 @@
 
 - name: Dump figlet output into motd
   become: true
-  shell:  figlet '{{ node }}' > /etc/motd
+  shell:  figlet '{{ host }}' > /etc/motd
 
