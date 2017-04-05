@@ -39,6 +39,8 @@ galaxy_info:
       - figlet
       - ssh
       - mac
+      - fedora
+      - Redhat
       - OSX
 
 dependencies: []
