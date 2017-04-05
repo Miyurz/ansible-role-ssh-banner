@@ -24,6 +24,10 @@ galaxy_info:
         versions:
            - xenial
       - name: MacOSX
+        versions:
+           - all
+      - name: Darwin
+        versions:
            - all
 
    galaxy_tags:
