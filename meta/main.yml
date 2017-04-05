@@ -23,7 +23,7 @@ galaxy_info:
       - name: Ubuntu
         versions:
            - xenial
-      - name: Darwin
+      - name: MacOSX
            - all
 
    galaxy_tags:
