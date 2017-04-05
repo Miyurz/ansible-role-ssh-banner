@@ -7,3 +7,7 @@
 - include: redhat.yml
     when: ansible_os_family == 'RedHat'
     tags: package
+
+- include: darwin.yml
+    when: ansible_os_family == 'Darwin'
+    tags: package
