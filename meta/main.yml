@@ -27,6 +27,7 @@ galaxy_info:
    galaxy_tags:
       - banner
       - motd
+      - figlet
       - ssh
 
 dependencies: []
