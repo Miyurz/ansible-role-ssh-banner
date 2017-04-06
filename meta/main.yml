@@ -1,7 +1,7 @@
 ---
 galaxy_info:
    author: Mayur Nagekar
-   description: DevOps geek
+   description: Bootstrap your node to display the big banner showing the hostname/IP etc along with privacy policy guidelines.
    company: None
 
    # If the issue tracker for your role is not on github, uncomment the
