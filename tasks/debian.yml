@@ -3,15 +3,16 @@
   command: echo Debian family
 
 - name: Add universe repository into sources list
+  become: true
   apt_repository:
     repo: deb http://us.archive.ubuntu.com/ubuntu xenial main universe
     state: present
 
 - name: Install figlet
+  become: true
   apt:
     state: present
     name: figlet
-    update_cache: yes
 
 - name: Dump figlet output into motd
   become: true
