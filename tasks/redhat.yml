@@ -2,13 +2,9 @@
 - name: Redhat family
   command: echo Redhat family  
 
-- name: Install python2-dnf pre-req
-  become: true
-  command: dnf install -y python2-dnf
-
 - name: Install figlet
   become: true
-  dnf:
+  yum:
     state: present
     name: figlet
 
